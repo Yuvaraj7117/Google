@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <!-- <link href="./output.css" rel="stylesheet"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="./images/google-icon.png">
+</head>
+
+<body id="body">
+  <!-- header -->
+  <div class="flex justify-end gap-5 mt-4 mr-2 items-center pr-3">
+    <a href="#" class="text-sm hover:underline">Gmail</a>
+    <a href="#" class="text-sm hover:underline">Images</a>
+    <div class="hover:bg-gray-200 p-2 rounded-full">
+      <img src="./images/dot-grid.webp" alt="grid-icon" class="w-5 h-5 hover:cursor-pointer" id="gridIcon" onclick="handleClick()">
+    </div>
+    <button class="text-sm bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700">Sign In</button>
+
+  </div>
+  <!-- Google Products -->
+  <div class="flex justify-end">
+    <div class="grid grid-cols-3 w-5/12 md:w-72 grid-rows-6 gap-10 bg-white pt-7
+pl-12 mr-5 pr-5 pb-64
+ml-5 mb-5 mt-3 rounded-2xl absolute  max-h-64 overflow-auto hidden md:mr-5" id="gProducts">
+      <figure class="mt-2 hover:cursor-pointer">
+        <a href="https://www.google.com/"><img class="w-7 h-8 mb-2" src="./images/Google_account_icon.svg.png" alt="Account"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Account</figcaption>
+      </figure>
+
+      <figure class="m-1 hover:cursor-pointer">
+        <a href="https://www.google.com/"><img class="w-7 h-7 mt-1 mb-3" src="./images/google-icon.png" alt="Search"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Search</figcaption>
+
+      </figure>
+      <figure class="m-1 hover:cursor-pointer">
+        <a href="https://www.maps.google.com/"><img class="w-8 h-8 mt-1 mb-2" src="./images/icons8-google-maps.svg" alt="Maps"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Maps</figcaption>
+
+      </figure>
+      <figure class="mt-11 hover:cursor-pointer">
+        <a href="https://www.youtube.com/"><img class="w-9 h-9 mb-2" src="./images/icons8-youtube-48.png" alt="Youtube"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">YouTube</figcaption>
+
+      </figure>
+      <figure class="mt-11 hover:cursor-pointer">
+        <a href="https://www.news.google.co.in/"><img class="w-9 h-9 mb-2" src="./images/icons8-google-news.svg" alt="News"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">News</figcaption>
+
+      </figure>
+      <figure class="mt-11 hover:cursor-pointer">
+        <a href="https://www.mail.google.com/"><img class="w-8 h-8 mt-1 mb-2" src="./images/icons8-gmail.svg" alt="Gmail"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">GMail</figcaption>
+
+      </figure>
+      <figure class="mt-20 hover:cursor-pointer">
+        <a href="https://www.meet.google.com/"><img class="w-8 h-8 mb-2" src="./images/icons8-google-meet.svg" alt="Meet"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Meet</figcaption>
+
+      </figure>
+      <figure class="mt-16 hover:cursor-pointer">
+        <a href="https://www.chat.google.com/"><img class="w-8 h-15 mt-4 mb-2" src="./images/google-chat-logo.png" alt="Chat"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Chat</figcaption>
+      </figure>
+
+      <figure class="mt-20 hover:cursor-pointer">
+
+        <a href="https://www.contacts.google.com/"><img class="w-8 h-8 mb-2" src="./images/icons8-google-contacts.svg" alt="Contacts"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Contacts</figcaption>
+
+      </figure>
+
+      <figure class="mt-28 hover:cursor-pointer">
+        <a href="https://www.accounts.google.com/"><img class="w-9 h-9 mb-2" src="./images/icons8-google-drive.svg" alt="Drive"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Drive</figcaption>
+
+      </figure>
+      <figure class="mt-28 hover:cursor-pointer">
+        <a href="https://www.calendar.google.com/"><img class="w-9 h-9 mb-2" src="./images/OIP (1).jfif" alt="Calender"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Calendar</figcaption>
+
+      </figure>
+      <figure class="mt-28 hover:cursor-pointer">
+        <a href="https://www.play.google.com/"><img class="w-9 h-9 mb-2" src="./images/icons8-google-play.svg" alt="Play"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Play</figcaption>
+
+      </figure>
+      <figure class="mt-36 hover:cursor-pointer"> 
+        <a href="https://www.translate.google.co.in"><img class="w-8 h-8 mb-2" src="./images/icons8-google-translate.svg" alt="Translate"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Translate</figcaption>
+
+      </figure>
+      <figure class="mt-36 hover:cursor-pointer"> 
+        <a href="https://www.photos.google.com/"><img class="w-8 h-8 mb-2" src="./images/icons8-google-photos.svg" alt="Photos"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Photos</figcaption>
+
+      </figure>
+
+      <figure class="mt-36 hover:cursor-pointer">
+        <a href="https://www.google.com/chrome"><img class="w-8 h-8 mb-2" src="./images/icons8-google-chrome.svg" alt="Chrome"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Chrome</figcaption>
+
+      </figure>
+      <figure class="mt-48 hover:cursor-pointer"> 
+        <a href="https://www.shopping.google.com/"><img class="w-8 h-8 mb-2" src="./images/icons8-google-shopping.svg" alt="Shopping"></a>
+        <figcaption class="text-xs text-gray-900 font-medium">Shopping</figcaption>
+
+      </figure>
+     
+    </div>
+
+  </div>
+
+  <!-- Logo -->
+
+  <div class="w-full h-auto flex justify-center items-center mt-5 pt-5">
+    <img src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+  </div>
+
+  <!-- Search Box -->
+
+  <div class="md:flex justify-center items-center bg-white" id="searchBox">
+    <div
+      class="flex justify-around items-center gap-2 rounded-full  mt-10 ml-10 mr-10 pt-3 pb-3 pl-2 pr-3 md:w-1/2 bg-white border-2 "
+      id="bb">
+      <svg class="w-10 h-6 fill-gray-400 pl-2 pt-0" focusable="false" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24">
+        <path
+          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+        </path>
+      </svg>
+
+      <input class="outline-none w-full bg-inherit" type="text" id="input">
+
+      <svg class="w-10 h-6 hover:cursor-pointer" focusable="false" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill="#4285f4"
+          d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z">
+        </path>
+        <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+        <path fill="#fbbc04"
+          d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path>
+        <path fill="#ea4335"
+          d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z">
+        </path>
+      </svg>
+      <svg class="w-10 h-6 hover:cursor-pointer" focusable="false" viewBox="0 0 192 192"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect fill="none" height="192" width="192"></rect>
+        <g>
+          <circle fill="#34a853" cx="144.07" cy="144" r="16"></circle>
+          <circle fill="#4285f4" cx="96.07" cy="104" r="24"></circle>
+          <path fill="#ea4335"
+            d="M24,135.2c0,18.11,14.69,32.8,32.8,32.8H96v-16l-40.1-0.1c-8.8,0-15.9-8.19-15.9-17.9v-18H24V135.2z"></path>
+          <path fill="#fbbc04" d="M168,72.8c0-18.11-14.69-32.8-32.8-32.8H116l20,16c8.8,0,16,8.29,16,18v30h16V72.8z">
+          </path>
+          <path fill="#4285f4"
+            d="M112,24l-32,0L68,40H56.8C38.69,40,24,54.69,24,72.8V92h16V74c0-9.71,7.2-18,16-18h80L112,24z"></path>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <!-- List -->
+  <div class=" hidden mt-0 ml-10 mr-10 pb-3 pl-2 pr-3 md:w-1/2 md:mx-auto bg-slate-10" id="resultList">
+    <span class="text-sm text-gray-500">Trending Searches</span>
+    <span class="flex gap-3 items-start mt-2 hover:bg-slate-50 pt-1 pb-1 hover:cursor-default">
+      <svg class="text-gray-500" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 16L9 10L13 14L21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M21 6V10M21 6H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      uk general election results
+    </span>
+    <span class="flex gap-3 items-center hover:bg-slate-50  pt-1 pb-1  hover:cursor-default">
+      <svg class="text-gray-500" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 16L9 10L13 14L21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M21 6V10M21 6H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      ola maps vs goole maps
+    </span>
+
+    <span class="flex gap-3 items-center hover:bg-slate-50 pt-1 pb-1  hover:cursor-default">
+      <svg class="text-gray-500" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 16L9 10L13 14L21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M21 6V10M21 6H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      french excalibur sword vanishes reddit
+    </span>
+
+    <span class="flex gap-3 items-center hover:bg-slate-50 pt-1 pb-1 hover:cursor-default">
+      <svg class="text-gray-500" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 16L9 10L13 14L21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M21 6V10M21 6H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg> mahua moitra rekha sharma
+    </span>
+
+    <span class="flex gap-3 items-center hover:bg-slate-50 pt-1 pb-1 hover:cursor-default">
+      <svg class="text-gray-500" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 16L9 10L13 14L21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M21 6V10M21 6H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      captain anushman singh kirti chakra
+    </span>
+
+    <span class="flex gap-3 items-center hover:bg-slate-50 pt-1 pb-1 hover:cursor-default">
+      <svg class="text-gray-500" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 16L9 10L13 14L21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M21 6V10M21 6H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      jkboss class 11th results
+    </span>
+
+
+    <span class="flex gap-3 items-center hover:bg-slate-50 pt-1 pb-1 hover:cursor-default">
+      <svg class="text-gray-500" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 16L9 10L13 14L21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M21 6V10M21 6H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      nasa astroid
+    </span>
+
+    <div class="flex justify-center gap-4 mt-5" id="inside">
+      <button class="bg-slate-100 p-2 rounded-md text-sm hover:border border-gray-400">Google Search</button>
+      <button class="bg-slate-100 p-2 rounded-md text-sm hover:border border-gray-400 transform-none">I'm Feeling
+        Lucky</button>
+    </div>
+  </div>
+  <div class="flex justify-center gap-4 mt-5" id="inside2">
+    <button class="bg-slate-100 p-2 rounded-md text-sm hover:border border-gray-400">Google Search</button>
+    <button class="bg-slate-100 p-2 rounded-md text-sm hover:border border-gray-400 transform-none">I'm Feeling
+      Lucky</button>
+  </div>
+
+  <!-- Languages -->
+
+
+  <div class="flex justify-center gap-x-3 text-sm mt-5 items-baseline">
+    <a>Google offered in:</a>
+    <a href="#" class="hover:underline text-xs text-blue-700"><span class="text-fs">हिन्दी</span></a>
+    <a href="#" class="hover:underline text-xs text-blue-700"><span class="text-fs">বাংলা</span></a>
+    <a href="#" class="hover:underline text-xs text-blue-700"><span class="text-fs">తెలుగు</span></a>
+    <a href="#" class="hover:underline text-xs text-blue-700"><span class="text-fs">मराठी</span></a>
+    <a href="#" class="hover:underline text-xs text-blue-700"><span class="text-fs">தமிழ்</span></a>
+    <a href="#" class="hover:underline text-xs text-blue-700"><span class="text-fs">ગુજરાતી</span></a>
+    <a href="#" class="hover:underline text-xs text-blue-700"><span class="text-fs">ಕನ್ನಡ</span></a>
+    <a href="#" class="hover:underline text-xs text-blue-700"><span class="text-fs">മലയാളം</span></a>
+    <a href="#" class="hover:underline text-xs text-blue-700"><span class="text-fs">ਪੰਜਾਬੀ</span></a>
+  </div>
+
+  <!-- Footer -->
+
+  <div class="fixed w-full bottom-0">
+    <div class="w-full bg-slate-100 pl-5 pt-5 pb-4 text-sm">India</div>
+    <div class="w-full bg-slate-100 flex justify-between text-sm pl-2 pt-5 pb-4 mt-1">
+      <div class="flex gap-4 ml-3">
+        <span class="hover:underline hover:cursor-pointer">About</span>
+        <span class="hover:underline hover:cursor-pointer">Advertising</span>
+        <span class="hover:underline hover:cursor-pointer">Business</span>
+        <span class="hover:underline hover:cursor-pointer">How Search works</span>
+      </div>
+      <div class="flex gap-4 mr-3">
+        <span class="hover:underline hover:cursor-pointer">Privacy</span>
+        <span class="hover:underline hover:cursor-pointer">Terms</span>
+        <span class="hover:underline hover:cursor-pointer">Settings</span>
+      </div>
+    </div>
+  </div>
+  <script>
+    const searchBox = document.getElementById('searchBox');
+    const input = document.getElementById('input');
+    const resultList = document.getElementById('resultList');
+    const bb = document.getElementById('bb');
+    const inside = document.getElementById('inside');
+    const gridIcon = document.getElementById('gridIcon');
+    const gProducts = document.getElementById('gProducts');
+
+    input.onfocus = function () {
+      resultList.classList.toggle('hidden');
+      resultList.style.boxShadow = "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px";
+      resultList.style.borderBottomLeftRadius = "20px";
+      resultList.style.borderBottomRightRadius = "20px";
+      bb.style.borderBottomLeftRadius = "0px";
+      bb.style.borderBottomRightRadius = "0px";
+      bb.style.borderTopLeftRadius = "20px";
+      bb.style.borderTopRightRadius = "20px";
+      inside.classList.remove('hidden');
+      inside2.classList.add('hidden');
+    }
+    document.getElementById('input').onblur = function () {
+      document.getElementById('resultList').classList.toggle('hidden');
+      bb.style.borderBottomLeftRadius = "20px";
+      bb.style.borderBottomRightRadius = "20px";
+      inside2.classList.remove('hidden');
+
+    }
+   
+    gridIcon.onclick=function(){
+      gProducts.classList.toggle('hidden');
+      gProducts.style.boxShadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px";
+    }
+
+  </script>
+</body>
+
+</html>
